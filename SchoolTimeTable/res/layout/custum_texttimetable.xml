@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background" >
+    <RelativeLayout
+        android:id="@+id/layouttimetables"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Layout"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/layouttimetable"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFF00" >
+
+            <TextView
+                android:id="@+id/textdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="friday 20,sep 2015"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/texttime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textdate"
+                android:layout_marginTop="50dp"
+                android:text="08.00hrs-09.00hrs"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/texthrs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/texttime"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="1hr"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutdesc"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/layouttimetable"
+            android:background="#287AA9" >
+
+            <TextView
+                android:id="@+id/textid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="P7033"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textsubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textid"
+                android:layout_marginTop="10dp"
+                android:text="Food and Nutrition 3(Practical Planning Session)"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+ 
+</RelativeLayout>

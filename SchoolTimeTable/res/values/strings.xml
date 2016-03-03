@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">SKUBAG</string>
+    <string name="wassche">WASSCE</string>
+    <string name="novdec">NOV/DEC</string>
+    <string name="mytimetable">MY TIMETABLE</string>
+    <string name="app_id">338821176236573</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="ok">OK</string>
+    <!-- Strings used in app ui -->
+
+    <string name="action_settings">Settings</string>
+    <string name="hello">Hello, </string>
+    <string name="login_instructions">Login to twiter</string>
+    <string name="share_instructions">Enter share message</string>
+    <string name="btn_login">Login to Twitter</string>
+    <string name="btn_share">Share</string>
+
+    <!-- Twitter Configurations -->
+    <string name="twitter_callback">http://www.mobiwebcode.com</string>
+    <string name="twitter_consumer_key">d1BfuKrbc1cgZgU6LoJGarYpJ</string>
+    <string name="twitter_consumer_secret">75bRCubZSU1UBD02yZwP3mpe7UPLxtHgTxNwSFMie1BVFTGg87</string>
+    <string name="twitter_OAuthAccessToken">255066599-QUFyNeFkdzsabwas2ph8Zseq91dEQZ850IdU4o9G</string>
+    <string name="twitter_OAuthAccessTokenSecret">Ns9dKM39p3VfENAqDwcJsVPjOxyyMT99Fn2Orr6OthEys</string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+    <!-- End Configurations -->
+
+</resources>

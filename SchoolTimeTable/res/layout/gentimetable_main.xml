@@ -1,0 +1,180 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.gentimetable.GentimetableActivity" >
+
+    <include layout="@layout/menu" />
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" >
+
+        <RelativeLayout
+            android:id="@+id/Layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/navigation"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/menuBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/menu_icon" />
+
+          <RelativeLayout
+                android:id="@+id/menubuttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/menuBtn"
+                android:background="@drawable/navigation"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GENERATE TIMETABLE"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttonlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layout"
+            android:layout_marginTop="30dp"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/Layoutwassche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btn_wassche"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="00dp"
+                    android:background="@drawable/setup_timetable"
+                    android:clickable="True"
+                    android:focusable="false" >
+                </Button>
+
+                <TextView
+                    android:id="@+id/Text_wassche"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_wassche"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="WASSCHE"
+                    android:textColor="#000000"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Layoutnovdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/Layoutwassche"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btn_nov"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="00dp"
+                    android:background="@drawable/setup_timetable"
+                    android:clickable="True"
+                    android:focusable="false" >
+                </Button>
+
+                <TextView
+                    android:id="@+id/Text_nov"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_nov"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="0dp"
+                    android:text="NOV/DEC"
+                    android:textColor="#000000"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Layoutmytimetable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Layoutwassche"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btn_mytimetable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="00dp"
+                    android:background="@drawable/setup_timetable"
+                    android:clickable="True"
+                    android:focusable="false" >
+                </Button>
+
+                <TextView
+                    android:id="@+id/Text_mytimetable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_mytimetable"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="0dp"
+                    android:text="MY TIMETABLE"
+                    android:textColor="#000000"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Layoutjamb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Layoutnovdes"
+                android:layout_toRightOf="@+id/Layoutmytimetable"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btn_jamb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="00dp"
+                    android:background="@drawable/setup_timetable"
+                    android:clickable="True"
+                    android:focusable="false" >
+                </Button>
+
+                <TextView
+                    android:id="@+id/Text_jamb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_jamb"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="0dp"
+                    android:text="JAMB"
+                    android:textColor="#000000"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

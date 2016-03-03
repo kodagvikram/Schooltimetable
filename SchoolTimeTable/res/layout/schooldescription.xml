@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/background"
+    tools:context="com.example.setting.SetttingActivity" >
+
+    <RelativeLayout
+        android:id="@+id/navigationLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/navigation"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/schoolnameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SCHOOL DESCRIPTION"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/optionsRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/navigationLayout"
+        android:layout_marginTop="0dp" >
+
+        <RelativeLayout
+            android:id="@+id/schooolnamelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/schoolnameTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCHOOL NAME"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/schooolimagelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/schooolnamelayout"
+            android:gravity="center" >
+
+            <app.tabsample.SmartImageView.NormalSmartImageView
+                android:id="@+id/schoolimage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/highschool"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/schooodesclayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/schooolimagelayout"
+            android:layout_marginLeft="0dp"
+            android:background="#ffffff"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/schooldescriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Located at the corner of Tecumseh and Langley Avenues in London,  Tecumseh School, which was built in the early 1900&apos;s,  is a place to focus, solidify and add quality, variety,  and scope to students&apos; lives.  It is a place for warmth and friendship and working together. Our teachers and administration are committed to helping each individual student to become the best he or she is capable of becoming.
+The school building itself is a 3 storey one, with lots of architechtural detail found in schools of that era.  The main building has had two additions over the years; a focus of the original building is the Kindergarten room which is phenomenal in size and configuration.  At one time, it was the hallmark in the city of London for Kindergarten rooms.  To this day, it still has gigantic floor to ceiling windows in a bay window type format, which is quite striking as you enter the room off the main corridor. "
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.tertiaryinfo.TertiaryinfoActivity" >
+
+    <include layout="@layout/menu" />
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" >
+
+        <RelativeLayout
+            android:id="@+id/Layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/navigation"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/menuBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/menu_icon" />
+
+            <RelativeLayout
+                android:id="@+id/menubuttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/menuBtn"
+                android:background="@drawable/navigation"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TERTIARY INFORMATION"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/textRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/Layout"
+            android:background="#ece7e7"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/schooltimetableTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TERTIERY INFO"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chooseCountryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/schooltimetableTextView"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="30dp"
+                android:text="CHOOSE COUNTRY"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/selectCountryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/schooltimetableTextView"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/chooseCountryTextView"
+                android:background="#000000"
+                android:onClick="countrySelected"
+                android:text="Done"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/countryListview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textRelativeLayout"
+            android:choiceMode="singleChoice"
+            android:listSelector="#ece7e7" >
+        </ListView>
+        
+    </RelativeLayout>
+
+</FrameLayout>

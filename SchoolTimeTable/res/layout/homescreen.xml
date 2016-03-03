@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/Layoutmenubaar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/LayoutSetupTimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_setuptimetable"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="00dp"
+                android:background="@drawable/setup_timetable"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <TextView
+                android:id="@+id/Text_setuptimetable"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/btn_setuptimetable"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:text="     SETUP\nTIMETABLE"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/LayoutGradecalculateTimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/LayoutSetupTimetable"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_gradecalculate"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/gradecalculator"
+                android:clickable="True"
+                android:focusable="false"
+                android:textSize="13sp" >
+            </Button>
+
+            <TextView
+                android:id="@+id/text_gradecalculator"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_below="@+id/btn_gradecalculate"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:text="    GRADE CALCULATOR"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/LayoutTertiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LayoutSetupTimetable" >
+
+            <Button
+                android:id="@+id/btn_tertiary"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/tertiaryinfo"
+                android:clickable="True"
+                android:focusable="false"
+                android:textSize="13sp" >
+            </Button>
+
+            <TextView
+                android:id="@+id/tertieryinfo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/btn_tertiary"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:text="TERTIARY   \n    INFO"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/LayoutDefinition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LayoutGradecalculateTimetable"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/LayoutTertiary" >
+
+            <Button
+                android:id="@+id/btn_Definition"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/definatins"
+                android:clickable="True"
+                android:focusable="false"
+                android:textSize="13sp" >
+            </Button>
+
+            <TextView
+                android:id="@+id/definitions"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/btn_Definition"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:text="DEFINITIONS"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layoutiqtest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LayoutGradecalculateTimetable"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="05dp"
+            android:layout_toRightOf="@+id/LayoutDefinition" >
+
+            <Button
+                android:id="@+id/btn_iqtest"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/iqtest"
+                android:clickable="True"
+                android:focusable="false"
+                android:textSize="13sp" >
+            </Button>
+
+            <TextView
+                android:id="@+id/text_iqtest"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/btn_iqtest"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:text="   IQ TEST"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layoutedutainment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LayoutTertiary"
+            android:layout_marginLeft="10dp" >
+
+            <Button
+                android:id="@+id/btn_edutainment"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="05dp"
+                android:background="@drawable/edutainment"
+                android:clickable="True"
+                android:focusable="false"
+                android:textSize="13sp" >
+            </Button>
+
+            <TextView
+                android:id="@+id/textedutainment"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/btn_edutainment"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="0dp"
+                android:text="EDUTAINMENT"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layoutpasco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LayoutDefinition"
+            android:layout_toRightOf="@+id/Layoutedutainment" >
+
+            <Button
+                android:id="@+id/btn_pasco"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/pasco"
+                android:clickable="True"
+                android:focusable="false"
+                android:textSize="10sp" >
+            </Button>
+
+            <TextView
+                android:id="@+id/text_pasco"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/btn_pasco"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:text=" PASSCO"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layoutchat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layoutiqtest"
+            android:layout_toRightOf="@+id/Layoutpasco"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_chat"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/chats"
+                android:clickable="True"
+                android:focusable="false" >
+            </Button>
+
+            <TextView
+                android:id="@+id/text_chat"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/btn_chat"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="0dp"
+                android:text="     CHAT"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    tools:context="com.example.previewresult.IQTestActivity" >
+
+    <include layout="@layout/menu" />
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" >
+
+        <RelativeLayout
+            android:id="@+id/Layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/navigation"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/menuBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/menu_icon" />
+
+            <RelativeLayout
+                android:id="@+id/menubuttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/menuBtn"
+                android:background="@drawable/navigation"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IQ TEST"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layoutchechbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/Layout" >
+
+            <CheckBox
+                android:id="@+id/chechbox_maths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="CORE MATHS"
+                android:textColor="#FFFFFF" />
+
+            <CheckBox
+                android:id="@+id/chechbox_physics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chechbox_maths"
+                android:layout_marginTop="0dp"
+                android:text="PHYSICS"
+                android:textColor="#FFFFFF" />
+
+            <CheckBox
+                android:id="@+id/chechbox_chemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chechbox_physics"
+                android:layout_marginTop="00dp"
+                android:text="CHEMISTRY"
+                android:textColor="#FFFFFF" />
+
+            <CheckBox
+                android:id="@+id/chechbox_biology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chechbox_chemistry"
+                android:layout_marginTop="0dp"
+                android:text="BIOLOGY"
+                android:textColor="#FFFFFF" />
+
+            <CheckBox
+                android:id="@+id/chechbox_english"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chechbox_biology"
+                android:layout_marginTop="0dp"
+                android:checked="true"
+                android:text="ENGLISH"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layoutbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layoutchechbox"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:paddingBottom="10dp" 
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <Button
+                android:id="@+id/btn_starttest"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="dp"
+                 android:background="@drawable/backgreenbutton"
+                android:layout_marginTop="0dp"
+                android:text="START TEST"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+
+
+            <Button
+                android:id="@+id/btn_Schoolsmeritlist"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                 android:background="@drawable/backgreenbutton"
+                android:layout_marginTop="0dp"
+                 android:textColor="#ffffff"
+                android:layout_toRightOf="@+id/btn_starttest"
+                android:text="SCHOOLS MERIT LIST"
+                android:textSize="12dp" />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</FrameLayout>

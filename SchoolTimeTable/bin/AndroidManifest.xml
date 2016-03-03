@@ -1,0 +1,245 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobiwebcode.schooltimetable"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.mobiwebcode.schooltimetable.GoogleAnalyticsApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="ADMOB_PUBLISHER_ID"
+            android:value="3307380753148568" />
+
+        <provider
+            android:name="com.facebook.NativeAppCallContentProvider"
+            android:authorities="com.facebook.app.NativeAppCallContentProvider338821176236573"
+            android:exported="true" />
+
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ChooseCountryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainOptionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PascoTestEnd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SpashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.OptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.GentimetableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.GradecalculatorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.PriviewResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.TertiaryinfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.AddfavorateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.DefinitionsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.SetttingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.PascoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.MyTimeTableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.TimetableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.PriviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.NovselectSubjectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.EdutainmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.IQTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.TestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.UserLogin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.ChooseCountry1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.SchoollistActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.MeritListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.ChatActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="image/jpeg*" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.SchoolsMeritList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.PascoQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.EdittimetableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.CreateTimetable"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.TrainingColleges"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.NovDecActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.WassceTimeTableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.JambTimeTableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.News"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.Quotes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.Images"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.Videos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.SchoolDescription"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.Newsdescription"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.SelectWschesubject"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.Selectsubjectjamb"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.Selectsubjectnovdec"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.SelectsubjectDefination"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.DefinationTopic"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.PascoTopic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.Help"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.Review"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.Invite"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.SendSMS"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.ViewFlipperMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.Searchlistview"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mobiwebcode.schooltimetable.TwitterFriendlist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+    </application>
+    <!-- Network State Permissions -->
+
+    <meta-data
+        android:name="com.google.android.gms.analytics.globalConfigResource"
+        android:resource="@xml/global_tracker" />
+
+</manifest>

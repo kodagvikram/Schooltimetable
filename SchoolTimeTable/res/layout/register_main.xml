@@ -1,0 +1,252 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    tools:context="com.example.register.RegisterActivity" >
+
+    <RelativeLayout
+        android:id="@+id/MenubaarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/navigation"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER USER"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/Scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MenubaarLayout"
+        android:layout_marginTop="0dp" >
+
+        <RelativeLayout
+            android:id="@+id/LoginLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background" >
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Name"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/nameValidationImage"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/validateimage"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edt_country"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Country Name"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/countryValidationImage"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/validateimage"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edt_state"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_country"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="State/Region/Province"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/stateValidationImage"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="170dp"
+                android:background="@drawable/validateimage"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edt_year"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_state"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Year/Grade"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/yearValidationImage"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="240dp"
+                android:background="@drawable/validateimage"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edt_school"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_year"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="School Name"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/schoolValidationImage"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="310dp"
+                android:background="@drawable/validateimage"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edt_Email"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_school"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Email"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/emailValidationImage"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="440dp"
+                android:background="@drawable/validateimage"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edt_Password"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_Email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/passwordValidationImage"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="510dp"
+                android:background="@drawable/validateimage"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edt_repeatPassword"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_Password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Repeat Password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/repeatpasswordValidationImage"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="580dp"
+                android:background="@drawable/validateimage"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edt_Phonnumber"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_repeatPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/phoneValidationImage"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="650dp"
+                android:background="@drawable/validateimage"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_Phonnumber"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/backgreenbutton"
+                android:text="SUBMIT"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

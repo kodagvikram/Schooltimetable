@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.mytimetable.TestActivity" >
+
+    <RelativeLayout
+        android:id="@+id/navigationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/navigation"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WRITE A REVIEW"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/navigationLayoutmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navigationLayout"
+        android:layout_marginTop="0dp"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/navigationLayoutreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/textcon"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:hint="write a review"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+           
+            </RelativeLayout>
+            
+         <RelativeLayout
+            android:id="@+id/navigationLayoutreviewbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/navigationLayoutreview"
+            android:background="#ffffff"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:background="@drawable/backgreenbutton"
+                android:hint="SUBMIT"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+           
+            </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

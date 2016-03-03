@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    tools:context="com.example.mytimetable.TestActivity" >
+
+    <RelativeLayout
+        android:id="@+id/navigationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/navigation"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMAGES"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </RelativeLayout>
+     <RelativeLayout
+        android:id="@+id/navigationLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/navigationLayout" >
+
+        <Button
+            android:id="@+id/buttonClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/backgreenbutton"
+            android:text="Add Images" />
+    </RelativeLayout>
+      <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/navigationLayout2"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/background"
+        android:columnWidth="150dp"
+        android:gravity="center"
+        android:numColumns="1" />
+ </RelativeLayout>
+    

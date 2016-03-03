@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    tools:context="com.example.mytimetable.TestActivity" >
+
+    <RelativeLayout
+        android:id="@+id/navigationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/navigation"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEST QUESTIONS"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contentRelativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navigationLayout"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/radioRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="50dp"
+                android:textColor="#000000" >
+
+                <TextView
+                    android:id="@+id/textquitions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QUESTIONS 1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="OPTION 1"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OPTION 2"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/mytimetable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OPTION 3"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/mytimetable2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OPTION 4"
+                    android:textColor="#FFFFFF" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioRelativeLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textwrong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wrong Answer"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textcorrect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/textwrong"
+                android:text="Correct Answer"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textwrong"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backgreenbutton"
+                android:text="EXIT"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btnnext"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textcorrect"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/btnExit"
+                android:background="@drawable/backgreenbutton"
+                android:text="NEXT QUESTION"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

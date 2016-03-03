@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+<RelativeLayout
+        android:id="@+id/navigationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/navigation"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Test"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    
+     <Button
+         android:id="@+id/endsession"
+         android:layout_width="200dp"
+         android:layout_height="50dp"
+         android:layout_alignLeft="@+id/restart"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="194dp"
+         android:text="END SESSION"
+         android:textSize="20dp" />
+
+     <Button
+         android:id="@+id/restart"
+         android:layout_width="200dp"
+         android:layout_height="50dp"
+         android:layout_below="@+id/endsession"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="34dp"
+         android:text="RESTART"
+         android:textSize="20dp" />
+
+</RelativeLayout>

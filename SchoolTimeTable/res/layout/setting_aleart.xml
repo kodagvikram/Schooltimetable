@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/buttonhelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/backgreenbutton"
+        android:text="HELP"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/buttoninvite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonhelp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/backgreenbutton"
+        android:text="INVITE A FRIEND"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/buttonreviw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      
+        android:layout_below="@+id/buttoninvite"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/backgreenbutton"
+        android:text="WRITE A REVIEW"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

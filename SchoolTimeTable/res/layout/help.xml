@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.mytimetable.TestActivity" >
+
+    <RelativeLayout
+        android:id="@+id/navigationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/navigation"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HELP"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/navigationLayoutmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navigationLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/navigationLayoutfaculty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/textcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAQ:"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/navigationLayoutcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/navigationLayoutfaculty"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/textfaq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTACT US :"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textwebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textfaq"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Website: www.schooltimetable.com  "
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/textemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textwebsite"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Email Adress: www.school@gmail.com  "
+                android:textColor="#000000"
+                android:textSize="17dp" />
+            
+             <TextView
+                android:id="@+id/textmobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textemail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Mobile number: 09989876545 "
+                android:textColor="#000000"
+                android:textSize="17dp" />
+            
+            <TextView
+                android:id="@+id/textoffice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textmobile"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Office Location: "
+                android:textColor="#000000"
+                android:textSize="17dp" />
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
